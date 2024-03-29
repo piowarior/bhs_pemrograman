@@ -1,0 +1,3 @@
+# apa itu bahasa pemrograman
+
+Bahasa pemrograman adalah sebuah kumpulan aturan-aturan atau instruksi yang disusun dalam bentuk kode-kode berbeda-beda tergantung bahasa apa yang  di pilih. Kode tersebut di kirimkan ke komputer dan di terjemahkan agar menjalankan instruksi-instruksi yang di berikan oleh programmer. Disini seorang programmer harus lah terlebih dahulu memahami aturan yang terdapat dalam bahasa pemrograman agar bisa saling paham antara programmer dan komputer. Ini juga bisa di sebut dengan sebuah alat komunikasi programmer dengan komputer
