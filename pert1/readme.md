@@ -4,21 +4,23 @@
 
 ___Bahasa pemrograman___ adalah sebuah kumpulan aturan-aturan atau instruksi yang disusun dalam bentuk kode-kode berbeda-beda tergantung bahasa apa yang  di pilih. Kode tersebut di kirimkan ke komputer dan di terjemahkan agar menjalankan instruksi-instruksi yang di berikan oleh programmer. Disini seorang programmer harus lah terlebih dahulu memahami aturan yang terdapat dalam bahasa pemrograman agar bisa saling paham antara programmer dan komputer. Ini juga bisa di sebut dengan sebuah alat komunikasi programmer dengan komputer
 
+### ___Tingkatan bahasa pemrograman___
+
 
 **Bahasa Pemrograman Tingkat Rendah (Low-Level Programming Language)**: adalah bahasa yang dekat dengan bahasa mesin dan arsitektur perangkat keras komputer. Mereka memiliki keterbatasan dalam hal abstraksi dan sering digunakan untuk pemrograman sistem dan perangkat tertanam.
- - **Contoh Bahasa**:<span style="color:green;"> Bahasa Rakitan (Assembly Language)</span>
+ - **Contoh Bahasa**:<span style="color:green;font-weight:bold"> Bahasa Rakitan (Assembly Language)</span>
  
 
 
 **Bahasa Pemrograman Tingkat Menengah (Mid-Level Programming Language)**: menawarkan abstraksi yang lebih tinggi daripada bahasa rakitan, tetapi masih memberikan kontrol yang relatif tinggi atas perangkat keras komputer. Mereka sering digunakan untuk pengembangan perangkat lunak aplikasi dan sistem.
- - **Contoh Bahasa**:<span style="color:green;"> C, C++</span>
+ - **Contoh Bahasa**:<span style="color:green;font-weight:bold"> C, C++</span>
 
 
 **Bahasa Pemrograman Tingkat Tinggi (High-Level Programming Language)**: menawarkan abstraksi yang lebih tinggi daripada bahasa tingkat menengah. Mereka sering memiliki sintaks yang lebih mudah dipahami dan memungkinkan pengembang untuk menulis kode dengan lebih cepat.
- - **Contoh Bahasa**:<span style="color:green;"> Python, Java, JavaScript, Ruby</span>
+ - **Contoh Bahasa**:<span style="color:green;font-weight:bold"> Python, Java, JavaScript, Ruby</span>
 
 **Bahasa Pemrograman Tingkat Sangat Tinggi (Very High-Level Programming Language)**: menawarkan abstraksi yang sangat tinggi dan umumnya digunakan untuk memecahkan masalah di tingkat yang lebih tinggi tanpa memerlukan perhatian terhadap detail implementasi.
- - **Contoh Bahasa**:<span style="color:green;"> SQL (Structured Query Language), MATLAB, R</span>
+ - **Contoh Bahasa**:<span style="color:green;font-weight:bold"> SQL (Structured Query Language), MATLAB, R</span>
 
 ## ___Paradigma pemrograman___
 paradigma pemrograman adalah cara kita memandang dan memahami dunia pemrograman komputer. Ini mencakup pemahaman tentang bagaimana kita mengatur data, logika, dan aliran kontrol dalam sebuah program untuk mencapai hasil yang diinginkan. Dengan kata lain, paradigma pemrograman memberikan landasan filosofis bagi cara kita berpikir tentang dan mendekati proses pembuatan perangkat lunak.
