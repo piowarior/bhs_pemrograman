@@ -1,0 +1,69 @@
+@startuml pert7
+start
+:initialize variable;
+while (true) is (control statement)
+    :display menu;
+    :get user input(pilih);
+    if (pilih == 'Makanan') then (case 1)
+        :display menu makanan;
+        :get user input(pilih_Makan);
+        if (pilih_Makan == '1') then (case ayam goreng)
+            :display "Anda memilih Ayam Goreng";
+            :get jumlah pesanan;
+            :hitung total harga (jumlah * harga_ayam_goreng);
+            :display "Total harga: Rp. [total_harga]";
+        else if (pilih_Makan == '2') then (case ketoprak)
+            :display "Anda memilih Ketoprak";
+            :get jumlah pesanan;
+            :hitung total harga (jumlah * harga_ketoprak);
+            :display "Total harga: Rp. [total_harga]";
+        else if (pilih_Makan == '3') then (case nasi goreng)
+            :display "Anda memilih Nasi Goreng";
+            :get jumlah pesanan;
+            :hitung total harga (jumlah * harga_nasi_goreng);
+            :display "Total harga: Rp. [total_harga]";
+        else if (pilih_Makan == '4') then (case kembali)
+            :goto menu;
+        else
+            :display "pilihan salah!";
+        endif
+        :kembali ke menu utama;
+
+
+        
+
+    else if (pilih == 'Minuman') then (case 2)
+        :display menu minuman;
+        :get user input(pilih_Minum);
+        if (pilih_Minum == '1') then (case jus mangga)
+            :display "Anda memilih Jus Mangga";
+            :get jumlah pesanan;
+            :hitung total harga (jumlah * harga_jus_mangga);
+            :display "Total harga: Rp. [total_harga]";
+        else if (pilih_Minum == '2') then (case coffee)
+            :display "Anda memilih Coffee";
+            :get jumlah pesanan;
+            :hitung total harga (jumlah * harga_coffee);
+            :display "Total harga: Rp. [total_harga]";
+        else if (pilih_Minum == '3') then (case teh jus)
+            :display "Anda memilih Teh Jus";
+            :get jumlah pesanan;
+            :hitung total harga (jumlah * harga_teh_jus);
+            :display "Total harga: Rp. [total_harga]";
+        else if (pilih_Minuman == '4') then (case kembali)
+            :goto menu;
+        else
+            :display "pilihan salah!";
+        endif
+        :kembali ke menu utama;
+        
+    else if (pilih == 'exit') then (case 3)
+        :display "EXIT";
+        break
+    else
+        :display "pilihan salah!";
+    endif
+endwhile (control statement)
+:display "EXIT";
+stop
+@enduml
