@@ -1,0 +1,15 @@
+@startuml 
+
+
+[*] --> menu
+ menu : 1. Aku 
+ menu : 2. dia
+ menu --> pilihan
+ pilihan --> menu :jika pilihan input salah
+
+ pilihan --> aku : ok
+  pilihan --> dia : ok
+
+
+
+@enduml
