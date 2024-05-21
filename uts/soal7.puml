@@ -1,0 +1,19 @@
+@startuml
+
+class Program {
+    - menu()
+    - tambah(a: float, b: float): float
+    - kurang(a: float, b: float): float
+    - kali(a: float, b: float): float
+    - bagi(a: float, b: float): float
+    - main()
+}
+
+Program ..> "Masukkan angka pertama: " : uses
+Program ..> "Masukkan angka kedua: " : uses
+Program ..> "Pilih operasi matematika: " : uses
+Program ..> "Pilihan tidak valid. Silakan coba lagi." : uses
+Program ..> "Hasil: " : uses
+Program ..> "Tidak bisa dibagi dengan nol" : uses
+
+@enduml
