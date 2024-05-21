@@ -1,19 +1,47 @@
-@startuml
+@startuml 
+left to right direction
 
-class Program {
-    - menu()
-    - tambah(a: float, b: float): float
-    - kurang(a: float, b: float): float
-    - kali(a: float, b: float): float
-    - bagi(a: float, b: float): float
-    - main()
+actor User as "User"
+
+rectangle "Source Code Pert4" {
+    usecase "Choice Menu" as menu
+    usecase "Masukkan Angka Pertama" as input1
+    usecase "Masukkan Angka Kedua" as input2
+    usecase "Call void tambah" as tambah
+    usecase "Call void kurang" as kurang
+    usecase "Call void bagi" as bagi
+    usecase "Call void kali" as kali
+    usecase "Show Result" as hasil
+    usecase "Exit Program" as exit
 }
 
-Program ..> "Masukkan angka pertama: " : uses
-Program ..> "Masukkan angka kedua: " : uses
-Program ..> "Pilih operasi matematika: " : uses
-Program ..> "Pilihan tidak valid. Silakan coba lagi." : uses
-Program ..> "Hasil: " : uses
-Program ..> "Tidak bisa dibagi dengan nol" : uses
+User --> menu
+
+menu --> tambah : pilih tambah
+tambah --> input1
+input1 --> input2
+input2 --> hasil
+hasil --> menu
+
+menu --> kurang : pilih kurang
+kurang --> input1
+input1 --> input2
+input2 --> hasil
+hasil --> menu
+
+menu --> bagi : pilih bagi
+bagi --> input1
+input1 --> input2
+input2 --> hasil
+hasil --> menu
+
+menu --> kali : pilih kali
+kali --> input1
+input1 --> input2
+input2 --> hasil
+hasil --> menu
+
+menu --> exit : pilih keluar
+exit --> menu : kembali ke menu awal
 
 @enduml
