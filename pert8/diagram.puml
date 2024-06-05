@@ -1,0 +1,47 @@
+@startuml
+
+actor Pembeli
+participant "Masalah" as masalah
+participant "Konten Kreator" as konten
+participant "Platform GameSaldo" as gamesaldo
+participant "Pilihan Saldo" as saldo
+participant "Pembayaran" as bayar
+participant "Total" as total
+participant "Customer Support" as support
+
+Pembeli -> masalah : Mengalami masalah
+masalah -> Pembeli : Masalah kepercayaan pengguna, keamanan transaksi, ketersediaan game
+
+Pembeli -> konten : Mendapatkan informasi iklan
+konten -> Pembeli : Rekomendasi top up yang bagus
+
+Pembeli -> gamesaldo : Membuka website GameSaldo
+gamesaldo -> Pembeli : Tampilkan platform GameSaldo
+
+Pembeli -> saldo : Pilih saldo game
+saldo -> Pembeli : Menampilkan daftar saldo game
+
+Pembeli -> bayar : Memilih saldo dan melakukan pembayaran
+bayar -> Pembeli : Proses pembayaran
+
+alt Pembayaran Berhasil
+  bayar -> total : Konfirmasi pembayaran
+  total -> Pembeli : Notifikasi saldo berhasil dibeli
+else Pembayaran Gagal
+  bayar -> Pembeli : Notifikasi pembayaran gagal
+end
+
+Pembeli -> gamesaldo : Menawarkan saldo yang tidak terpakai
+gamesaldo -> Pembeli : Update daftar saldo yang tersedia
+
+alt Ada Pembeli
+  gamesaldo -> Pembeli : Notifikasi saldo terjual
+else Tidak Ada Pembeli
+  gamesaldo -> Pembeli : Notifikasi tidak ada pembeli
+end
+
+Pembeli -> support : Menghubungi untuk bantuan
+support -> gamesaldo : Akses data transaksi
+support -> Pembeli : Memberikan bantuan
+
+@enduml
