@@ -1,47 +1,39 @@
 @startuml
 
-actor Pembeli
-participant "Masalah" as masalah
-participant "Konten Kreator" as konten
-participant "Platform GameSaldo" as gamesaldo
-participant "Pilihan Saldo" as saldo
-participant "Pembayaran" as bayar
-participant "Total" as total
-participant "Customer Support" as support
+actor User
+participant "Program" as p
+participant "Game Selection" as gs
+participant "Price Display" as pd
+participant "Payment Method" as pm
+participant "Confirmation" as conf
 
-Pembeli -> masalah : Mengalami masalah
-masalah -> Pembeli : Masalah kepercayaan pengguna, keamanan transaksi, ketersediaan game
+User -> p : Mulai program
+p -> gs : Tampilkan daftar game
+gs -> User : Masukkan pilihan game (1-4)
+User -> gs : Pilih game
+gs -> p : Pilihan game diterima
 
-Pembeli -> konten : Mendapatkan informasi iklan
-konten -> Pembeli : Rekomendasi top up yang bagus
+p -> User : Masukkan ID game Anda
+User -> p : Input ID game
 
-Pembeli -> gamesaldo : Membuka website GameSaldo
-gamesaldo -> Pembeli : Tampilkan platform GameSaldo
+p -> pd : Tampilkan harga saldo
+pd -> User : Masukkan jumlah saldo yang ingin dibeli
+User -> pd : Pilih jumlah saldo
+pd -> p : Pilihan saldo diterima
 
-Pembeli -> saldo : Pilih saldo game
-saldo -> Pembeli : Menampilkan daftar saldo game
+p -> pm : Tampilkan metode pembayaran
+pm -> User : Masukkan pilihan metode pembayaran (1-3)
+User -> pm : Pilih metode pembayaran
+pm -> p : Pilihan metode pembayaran diterima
 
-Pembeli -> bayar : Memilih saldo dan melakukan pembayaran
-bayar -> Pembeli : Proses pembayaran
+p -> conf : Tampilkan konfirmasi pembelian
+conf -> User : Konfirmasi pembelian (y/n)
+User -> conf : Pilih konfirmasi
 
-alt Pembayaran Berhasil
-  bayar -> total : Konfirmasi pembayaran
-  total -> Pembeli : Notifikasi saldo berhasil dibeli
-else Pembayaran Gagal
-  bayar -> Pembeli : Notifikasi pembayaran gagal
+alt Pembelian berhasil
+  conf -> User : Pembelian berhasil. Terima kasih!
+else Pembelian dibatalkan
+  conf -> User : Pembelian dibatalkan.
 end
-
-Pembeli -> gamesaldo : Menawarkan saldo yang tidak terpakai
-gamesaldo -> Pembeli : Update daftar saldo yang tersedia
-
-alt Ada Pembeli
-  gamesaldo -> Pembeli : Notifikasi saldo terjual
-else Tidak Ada Pembeli
-  gamesaldo -> Pembeli : Notifikasi tidak ada pembeli
-end
-
-Pembeli -> support : Menghubungi untuk bantuan
-support -> gamesaldo : Akses data transaksi
-support -> Pembeli : Memberikan bantuan
 
 @enduml

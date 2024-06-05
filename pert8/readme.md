@@ -23,6 +23,8 @@ GameSaldo adalah platform online yang memungkinkan pengguna untuk membeli dan me
 4. **Peningkatan Pengalaman Pengguna**: Meningkatkan pengalaman pengguna dalam transaksi digital.
 
 #### Masalah Terkait dengan Tujuan Bisnis
+
+banyak beredar terkait para pembeli mengenai masalah yang beredar sebagi berikut;
 1. **Keamanan Transaksi**: Ancaman keamanan yang dapat menghambat pengguna merasa aman dalam bertransaksi.
 2. **Kepercayaan Pengguna**: Kesulitan dalam membangun kepercayaan pengguna terhadap platform baru.
 3. **Integrasi Pembayaran**: Tantangan dalam mengintegrasikan berbagai metode pembayaran yang aman dan efisien.
@@ -30,7 +32,9 @@ GameSaldo adalah platform online yang memungkinkan pengguna untuk membeli dan me
 5. **Customer Support**: Menyediakan layanan dukungan pelanggan yang cepat dan efektif untuk mengatasi masalah pengguna.
 
 #### Penyelesaian dalam Mencapai Tujuannya
-paling utama intinya web saya bakan saya iklan kan lewat para konten kreator
+paling utama intinya web saya akan saya iklan kan lewat para konten kreator
+
+lalu saya akan mengembangkan web saya dengan berbagai hal berikut agar makin banyak peminat:
 
 1. **Implementasi Sistem Keamanan yang Kuat**: Menggunakan enkripsi data, otentikasi dua faktor, dan teknologi keamanan terkini untuk melindungi transaksi dan data pengguna.
 2. **Membangun Kepercayaan Melalui Transparansi**: Menyediakan informasi yang jelas tentang cara kerja platform, kebijakan privasi, dan ulasan dari pengguna lain untuk membangun kepercayaan.
