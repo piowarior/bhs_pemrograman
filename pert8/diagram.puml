@@ -6,6 +6,7 @@ participant "Game Selection" as gs
 participant "Price Display" as pd
 participant "Payment Method" as pm
 participant "Confirmation" as conf
+participant "Exit" as X
 
 User -> p : Mulai program
 p -> gs : Tampilkan daftar game
@@ -31,9 +32,9 @@ conf -> User : Konfirmasi pembelian (y/n)
 User -> conf : Pilih konfirmasi
 
 alt Pembelian berhasil
-  conf -> User : Pembelian berhasil. Terima kasih!
+  conf -> X : Pembelian berhasil. Terima kasih!
 else Pembelian dibatalkan
-  conf -> User : Pembelian dibatalkan.
+  conf -> X : Pembelian dibatalkan.
 end
 
 @enduml

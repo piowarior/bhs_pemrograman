@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": false,
+    "workbench.list.smoothScrolling": false
+}
