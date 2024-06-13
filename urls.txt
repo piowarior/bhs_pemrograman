@@ -1,0 +1,5 @@
+https://raw.githubusercontent.com/djambred/bhs_pemrograman/main/pert10/.env
+
+https://raw.githubusercontent.com/djambred/bhs_pemrograman/main/pert10/docker-compose.yml
+
+
