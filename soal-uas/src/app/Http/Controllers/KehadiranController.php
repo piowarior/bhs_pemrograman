@@ -70,6 +70,7 @@ class KehadiranController extends Controller
             return response()->json([
                 'success' => true,
                 'message' => 'Kehadiran deleted',
+                'data' => $kehadiran,
             ], 200);
         } else {
             return response()->json(['message' => 'Data not found'], 404);
