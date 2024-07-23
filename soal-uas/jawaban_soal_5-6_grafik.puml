@@ -1,0 +1,58 @@
+@startuml AttendanceSystemFishboneDiagram
+title Fishbone Diagram for Attendance System (SIAKAD)
+
+' Define the categories
+package "Technology" {
+    [Integration]
+    [User Interface]
+    [System Performance]
+}
+
+package "People" {
+    [Students]
+    [Faculty]
+    [Admin]
+    [Developers]
+    [Security]
+}
+
+package "Process" {
+    [Check-in Process]
+    [Data Management]
+    [Reporting]
+}
+
+package "Environment" {
+    [Institutional Policies]
+    [Regulations]
+    [Infrastructure]
+}
+
+package "Training" {
+    [User Training]
+    [Support]
+}
+
+' Main Bones
+[Technology] --> [Integration]
+[Technology] --> [User Interface]
+[Technology] --> [System Performance]
+
+[People] --> [Students]
+[People] --> [Faculty]
+[People] --> [Admin]
+[People] --> [Developers]
+[People] --> [Security]
+
+[Process] --> [Check-in Process]
+[Process] --> [Data Management]
+[Process] --> [Reporting]
+
+[Environment] --> [Institutional Policies]
+[Environment] --> [Regulations]
+[Environment] --> [Infrastructure]
+
+[Training] --> [User Training]
+[Training] --> [Support]
+
+@enduml

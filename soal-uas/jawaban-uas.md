@@ -1,11 +1,8 @@
 
 # **JAWABAN ANALISA UAS**
-# STUDI KASUS DENGAN TEMA DATA LOGISTIK
+# STUDI KASUS DENGAN TEMA DATA KEHADIRAN
 
-# Kehadiran: Pengertian, Signifikansi, dan Analisis SWOT
-
-## Apa 
-Kehadiran merupakan kondisi atau perihal seseorang atau kelompok yang hadir secara fisik di suatu tempat tertentu. Menurut Kamus Besar Bahasa Indonesia (KBBI), kehadiran adalah keberadaan atau adanya seseorang atau sekelompok orang pada suatu lokasi pada waktu tertentu. Dalam konteks manajemen acara atau kegiatan, kehadiran menjadi aspek krusial yang mempengaruhi kelancaran dan kesuksesan pelaksanaan.
+Kehadiran merupakan kondisi atau perihal seseorang atau kelompok yang hadir secara fisik di suatu tempat tertentu, kehadiran adalah keberadaan atau adanya seseorang atau sekelompok orang pada suatu lokasi pada waktu tertentu. Dalam konteks manajemen acara atau kegiatan , kehadiran menjadi aspek krusial yang mempengaruhi kelancaran dan kesuksesan pelaksanaan.
 
 
 ### Siapa yang terlibat dalam Kehadiran?
