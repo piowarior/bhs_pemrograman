@@ -1,62 +1,20 @@
 @startuml
 
-[*] --> MenuRegistrasi
-MenuRegistrasi : 1. Username
-MenuRegistrasi : 2. Password
+actor user
 
-MenuRegistrasi --> Home : Jika inputan benar
-Home --> MenuRegistrasi : Jika home input salah maka
-Home : Tampilan halaman dan informasi
-Home : Informasi akun media sosial web
-Home : * Tombol memulai program
+participant "Website" as W
+participant "Admin" as A
+participant "Kasir" as K
+participant "Chief" as C
+participant "Waiters" as wt
 
-Home --> Start : User memulai program
-Start : Navbar
-Start : Tampilan halaman
-
-Start --> Navbar
-Navbar : * Pick agent
-Navbar : * Pick map
-Navbar : * Tombol start
-
-Navbar --> PickAgent
-PickAgent : Setup
-PickAgent : Lineup
-
-PickAgent --> Setup
-Setup : Killjoy
-Setup : Cypher
-Setup : * Semua agen yang memiliki setup
-
-PickAgent --> Lineup
-Lineup : Sova
-Lineup : Brimstone
-Lineup : * Semua agen yang memiliki lineup
-
-Setup --> Mulai
-Lineup --> Mulai
-
-Navbar --> PickMap
-PickMap : Breeze
-PickMap : Split
-PickMap : Sunset
-PickMap : Dll... semua map
-
-PickMap --> Mulai
-Mulai --> Navbar : Jika user ingin ganti/kembali
-Mulai : * Tampilkan map
-Mulai : * Tampilkan tanda-tanda lokasi setup/lineup berwarna biru di map
-
-Mulai --> TampilanMapLokasiYangDiTujuLineup
-TampilanMapLokasiYangDiTujuLineup --> Mulai : Jika user ingin ganti/kembali
-TampilanMapLokasiYangDiTujuLineup : * Tampilkan tanda-tanda lokasi line up di map berwarna oranye
-
-Mulai --> HasilPickAgentSetup
-HasilPickAgentSetup --> Mulai : Jika user ingin ganti/kembali
-HasilPickAgentSetup : * Video/gambar setup
-
-TampilanMapLokasiYangDiTujuLineup --> HasilPickAgentLineup
-HasilPickAgentLineup --> TampilanMapLokasiYangDiTujuLineup : Jika user ingin ganti/kembali
-HasilPickAgentLineup : * Video/gambar lineup
+user --> W: Melakukan Order Via Website dengan mengisi formulir
+W --> A: Melakukan Verifikasi Order
+A --> K: Melakukan Verifikasi Pembayaran
+W --> C: Melakukan Persiapan Masak
+C --> wt: Menyampaikan Pesanan Telah Selesai
+wt --> user
 
 @enduml
+
+fish bone
